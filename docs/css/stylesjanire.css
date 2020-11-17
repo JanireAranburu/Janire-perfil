@@ -81,10 +81,13 @@ select {
 
 /* ----------------------- GLOBAL ------------------ */
 
+html, body {
+  height: 100%;
+}
+
+
 html {
-    font-size: 62.5%;
-    background: #FFEB56;
-    
+    font-size: 62.5%;    
 }
 
 body {
@@ -94,47 +97,99 @@ body {
 }
 
 h1 {
-    font-size: 6.3rem; 
+    font-size: 7.3rem; 
     line-height: 1.5;
   }
 
 
 
-
-
-
-
   /* ----------------------- UTILITIES ------------------ */
+/*  
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
 
-.wrapper {
-    margin: 0 auto;
-    max-width: 128rem;
-    padding: 0 auto;
-  }
+
 
   /* ----------------------- HEADER ------------------ */
 
-.header-container {
-    display: flex;
-    align-items: center;
-  }
+   .header-container {
+     position: relative;
+     display: block;
+     top: 20rem;
+     left: 10rem; 
+     z-index: 2;
+   }
+
+
+   
 
   /* ----------------------- MAIN ------------------ */
 
-  .main {
-      font-size: 2.1rem;
-      line-height: 1.1;
-      color: #1D1D1B;
+  .imagene-container:before {
+    background: #FFEB56;
+    content:'';
+    display: block;
+    height: 80rem;
+    width: 128rem;
+    position: absolute;
+    bottom: -35rem;
   }
   
+  
+  .imagene {
+    position: relative;
+    margin: 8.0rem;
+    min-width: 10.0rem;
+    height: 100.0rem ;
+    z-index: 1;
+  }
+
+  .main {
+      position: relative;
+      display: block;
+      top: -90rem;
+      left: 10rem; 
+      z-index: 2;
+      font-size: 2.1rem;
+      line-height: 1.6;
+      color: #1D1D1B;
+      margin: 0 1rem;
+      max-width: 50rem;
+      padding: 0 2rem;
+    }
+  
   .main-container {
+    position: relative;
+    display: block;
+    top: -80rem;
+    left: 10rem; 
+    z-index: 2;
     font-size: 2.2rem;
-    line-height: 1.1;
+    line-height: 1.8;
     color:#E2E2E2;
+    margin: 0 1rem;
+    max-width: 45rem;
+    padding: 0 2rem;
   }
 
   .main-comillas {
+    position: relative;
+    display: block;
+    top: -70rem;
+    left: 10rem; 
+    z-index: 2;
     font-size: 2.6rem;
-    line-height: 1.1;
+    line-height: 1.8;
     color: #1D1D1B;
+    margin: 0 1rem;
+    max-width: 38rem;
+    padding: 0 2rem;
   }
+
+   /* ----------------------- RESPONSIVE ------------------ */
+
+   
